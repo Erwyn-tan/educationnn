@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the transformative impact of AI education on children and adults. See how AI technology shapes learning and development." />
+    <meta name="keywords" content="AI impact, education transformation, children learning, adult development, AI benefits" />
+    <title>NEXT - AI Impact on Education</title>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;800&display=swap"></noscript>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Loading animation -->
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #141414; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 50px; height: 50px; border: 3px solid rgba(255, 255, 255, 0.1); border-top: 3px solid #f77062; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo" aria-label="NEXT Home">
+                <i class="fas fa-gem" aria-hidden="true"></i>NEXT
+            </a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/impact.html" class="navbar__links" aria-current="page">Impact</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/product.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/feedback.html" class="navbar__links">Feedback</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk3lccwHgz0uKLrcSlcs8XPlvsqVrinU7CZ7clZr5RsmsNvA/viewform?usp=dialog" class="button" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="main">
+        <section class="main__container">
+            <div class="main__content">
+                <h1>THE IMPACT OF</h1>
+                <h2>AI EDUCATION</h2>
+                <p>Discover how AI technology transforms learning experiences and creates opportunities for both children and adults worldwide.</p>
+                <button class="main__btn" onclick="smoothScroll('#kids-impact')">
+                    <span>Explore Impact</span>
+                </button>
+            </div>
+            <div class="main__img-container">
+                <img id="main__img" src="images/pic3.jpg" alt="AI Education Impact Illustration" loading="lazy" />
+            </div>
+        </section>
+    </main>
+
+    <!-- Impact Overview -->
+    <section class="impact-overview fade-in">
+        <div class="overview-content">
+            <h2>Transforming Lives Through AI</h2>
+            <p>Artificial Intelligence is revolutionizing education by creating personalized, accessible, and engaging learning experiences that adapt to individual needs and unlock human potential at every stage of life.</p>
+            <div class="impact-metrics">
+                <div class="metric-item fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>2.7B+</h3>
+                    <p>Lives Impacted</p>
+                </div>
+                <div class="metric-item fade-in">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>89%</h3>
+                    <p>Learning Improvement</p>
+                </div>
+                <div class="metric-item fade-in">
+                    <i class="fas fa-globe"></i>
+                    <h3>195</h3>
+                    <p>Countries Reached</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kids Impact Section -->
+    <section class="services kids-impact-section" id="kids-impact">
+        <div class="section-header fade-in">
+            <h1>👶 Impact of AI Technology on Kids</h1>
+            <p style="color: white;">Empowering young minds with intelligent learning tools that foster creativity, inclusion, and future readiness</p>
+        </div>
+        
+        <div class="services__container">
+            <article class="services__card impact-card fade-in" data-category="learning">
+                <div class="card-overlay"></div>
+                <div class="impact-icon">🎯</div>
+                <h2>Personalized Learning</h2>
+                <div class="impact-content">
+                    <p>AI has the capability to adapt educational content to suit each child's unique learning style, pace, and preferences, ensuring they receive individualized attention that promotes deeper understanding and long-term retention of knowledge.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">+67% Retention</span>
+                        <span class="benefit-tag">3x Faster Learning</span>
+                    </div>
+                </div>
+                <button class="impact-btn" onclick="showImpactDetails('personalized-learning')">
+                    <span>See Full Impact</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card fade-in" data-category="creativity">
+                <div class="card-overlay"></div>
+                <div class="impact-icon">🎨</div>
+                <h2>Enhanced Creativity</h2>
+                <div class="impact-content">
+                    <p>AI-powered tools, such as design platforms and storytelling applications, give kids opportunities to express their imagination by creating digital art, writing compelling stories, designing video games, or even experimenting with music composition.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">+45% Creativity</span>
+                        <span class="benefit-tag">Digital Native Skills</span>
+                    </div>
+                </div>
+                <button class="impact-btn" onclick="showImpactDetails('enhanced-creativity')">
+                    <span>Discover More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card fade-in" data-category="inclusion">
+                <div class="card-overlay"></div>
+                <div class="impact-icon">♿</div>
+                <h2>Inclusive Education</h2>
+                <div class="impact-content">
+                    <p>AI-driven assistive technologies, such as real-time language translation, speech-to-text, and text-to-speech systems, make learning accessible for children with disabilities or those who face language barriers.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">100% Accessible</span>
+                        <span class="benefit-tag">Universal Design</span>
+                    </div>
+                </div>
+                <button class="impact-btn" onclick="showImpactDetails('inclusive-education')">
+                    <span>Learn Impact</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card fade-in" data-category="skills">
+                <div class="card-overlay"></div>
+                <div class="impact-icon">🚀</div>
+                <h2>Future Skills</h2>
+                <div class="impact-content">
+                    <p>Introducing children to AI technologies early helps them develop essential 21st-century skills such as problem-solving, computational thinking, and coding, preparing them for a world where these capabilities will be increasingly valuable.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">21st Century Skills</span>
+                        <span class="benefit-tag">Career Ready</span>
+                    </div>
+                </div>
+                <button class="impact-btn" onclick="showImpactDetails('future-skills')">
+                    <span>Explore Skills</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Transition Wave -->
+    <section class="wave-transition">
+        <div class="wave-content fade-in">
+            <h2>Growing with AI</h2>
+            <p style="color: white;">As learners mature, AI continues to evolve with them, providing sophisticated tools and insights for adult learning and professional development</p>
+        </div>
+        <div class="wave-animation">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z" fill="url(#waveGradient)"></path>
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ff0844;stop-opacity:0.3" />
+                        <stop offset="50%" style="stop-color:#21d4fd;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#b721ff;stop-opacity:0.3" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Adults Impact Section -->
+    <section class="services adult-impact-section">
+        <div class="section-header fade-in">
+            <h1>🧔‍♂️ Impact of AI Technology on Adults</h1>
+            <p style="color: white;">Transforming professional lives and enabling continuous growth through intelligent solutions</p>
+        </div>
+        
+        <div class="services__container">
+            <article class="services__card impact-card adult-card fade-in" data-category="aging">
+                <div class="card-overlay adult-overlay"></div>
+                <div class="impact-icon">🏠</div>
+                <h2>Aging Support</h2>
+                <div class="impact-content">
+                    <p>AI technologies, including voice assistants and smart home systems, support older adults by enabling independent living while ensuring safety through health monitoring, medication reminders, and emergency alerts.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">+78% Independence</span>
+                        <span class="benefit-tag">24/7 Care</span>
+                    </div>
+                </div>
+                <button class="impact-btn adult-btn" onclick="showImpactDetails('aging-support')">
+                    <span>View Benefits</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card adult-card fade-in" data-category="finance">
+                <div class="card-overlay adult-overlay"></div>
+                <div class="impact-icon">💰</div>
+                <h2>Financial Management</h2>
+                <div class="impact-content">
+                    <p>AI-powered budgeting tools, investment platforms, and financial advisors help adults manage their finances more effectively, offering tailored insights and recommendations to maximize savings and plan for retirement.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">+34% Savings</span>
+                        <span class="benefit-tag">Retirement Ready</span>
+                    </div>
+                </div>
+                <button class="impact-btn adult-btn" onclick="showImpactDetails('financial-management')">
+                    <span>Optimize Finances</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card adult-card fade-in" data-category="communication">
+                <div class="card-overlay adult-overlay"></div>
+                <div class="impact-icon">🌐</div>
+                <h2>Global Communication</h2>
+                <div class="impact-content">
+                    <p>AI tools in communication, such as language translation and speech-to-text technologies, help adults interact more effectively across languages and cultural barriers, fostering stronger global collaboration.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">Universal Access</span>
+                        <span class="benefit-tag">Global Reach</span>
+                    </div>
+                </div>
+                <button class="impact-btn adult-btn" onclick="showImpactDetails('global-communication')">
+                    <span>Connect Globally</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+            
+            <article class="services__card impact-card adult-card fade-in" data-category="experience">
+                <div class="card-overlay adult-overlay"></div>
+                <div class="impact-icon">⭐</div>
+                <h2>Enhanced Experiences</h2>
+                <div class="impact-content">
+                    <p>AI allows businesses to personalize services for adults by predicting preferences, offering tailored recommendations, and providing 24/7 customer support through intelligent chatbots for seamless experiences.</p>
+                    <div class="impact-benefits">
+                        <span class="benefit-tag">100% Personalized</span>
+                        <span class="benefit-tag">24/7 Support</span>
+                    </div>
+                </div>
+                <button class="impact-btn adult-btn" onclick="showImpactDetails('enhanced-experiences')">
+                    <span>Experience More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Impact Summary -->
+    <section class="impact-summary fade-in">
+        <div class="summary-content">
+            <h2>The Complete Impact</h2>
+            <p style="color: white;">AI technology enhances learning and productivity for both kids and adults. While it offers great benefits, such as personalized education for children and career support for adults, challenges like privacy and overuse need attention. Responsible use can maximize its positive impact.</p>
+            
+            <div class="impact-timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-icon">👶</div>
+                    <h3>Early Years (5-12)</h3>
+                <p style="color: white;">Foundation building with personalized learning and creative exploration</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-icon">🎓</div>
+                    <h3>Adolescence (13-18)</h3>
+                <p style="color: white;">Advanced skill development and career preparation</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-icon">👨‍💼</div>
+                    <h3>Adulthood (18+)</h3>
+                <p style="color: white;">Professional growth and lifelong learning enhancement</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-icon">👴</div>
+                    <h3>Senior Years (65+)</h3>
+                 <p style="color: white;">Independence support and quality of life improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/sign__up">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/feedback.html">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Resources</h2>
+                    <a href="/">Research Papers</a>
+                    <a href="/">Case Studies</a>
+                    <a href="/">Impact Reports</a>
+                    <a href="/">Community</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/erwyn_qoq" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/Erwyn Pain" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="/" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    <a href="https://www.linkedin.com/ERWYN TAN FU SHEN MOE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo" aria-label="NEXT Home">
+                        <i class="fas fa-gem" aria-hidden="true"></i>NEXT
+                    </a>
+                </div>
+                <p class="website__rights">© NEXT 2024. All rights reserved</p>
+                <div class="social__icons">
+                    <a class="social__icon--link" href="https://www.facebook.com/Erwyn Pain" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="https://www.instagram.com/erwyn_qoq" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="/" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="https://www.linkedin.com/ERWYN TAN FU SHEN MOE" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Impact Details Modal -->
+    <div id="impact-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    <script>
+        // Page-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remove loader
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }, 800);
+
+            // Animate metrics
+            setupAnimateMetrics();
+            
+            // Enhanced card interactions
+            setupCardInteractions();
+            
+            // Timeline animation
+            setupTimelineAnimation();
+        });
+
+        // Animate impact metrics
+        function animateMetrics() {
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+
+            const metricsObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const metricNumber = entry.target.querySelector('h3');
+                        const finalText = metricNumber.textContent;
+                        animateNumber(metricNumber, finalText);
+                        metricsObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.metric-item').forEach(metric => {
+                metricsObserver.observe(metric);
+            });
+        }
+
+        // Enhanced card interactions
+        function setupCardInteractions() {
+            const cards = document.querySelectorAll('.impact-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                    const overlay = this.querySelector('.card-overlay');
+                    if (overlay) overlay.style.opacity = '0.8';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    const overlay = this.querySelector('.card-overlay');
+                    if (overlay) overlay.style.opacity = '0.6';
+                });
+            });
+        }
+
+        // Timeline animation
+        function setupTimelineAnimation() {
+            const timelineObserver = new IntersectionObserver(function(entries) {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('timeline-active');
+                        }, index * 200);
+                        timelineObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                timelineObserver.observe(item);
+            });
+        }
+
+        // Show impact details modal
+        function showImpactDetails(impactType) {
+            const modal = document.getElementById('impact-modal');
+            const modalBody = document.getElementById('modal-body');
+            
+            const impactData = {
+                'personalized-learning': {
+                    title: 'Personalized Learning Impact',
+                    content: `
+                        <h3>Key Benefits:</h3>
+                        <ul>
+                            <li>67% improvement in knowledge retention</li>
+                            <li>3x faster learning progression</li>
+                            <li>Reduced learning gaps by 45%</li>
+                            <li>Increased student engagement by 78%</li>
+
+                        <h3>Real-world Applications:</h3>
+                        <p>AI-powered platforms like Khan Academy and Duolingo use adaptive algorithms to customize learning paths...</p>
+                    `
+                },
+
+                 'enhanced-creativity': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Enhanced Creativity:</h3>
+                            <ul>
+                            <li>Boosts problem-solving skills by 65% through innovative thinking</li>
+                            <li>Encourages original ideas and out-of-the-box solutions</li>
+                            <li>Enhances collaboration by promoting diverse perspectives</li>
+                            <li>Improves adaptability and resilience in fast-changing environments</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>Design thinking workshops, AI-assisted brainstorming tools, and creative platforms like Canva, Figma, or Adobe Creative Cloud enable individuals and teams to generate innovative solutions in education, business, and the arts.</p>
+
+
+                    `
+                },
+
+
+                'inclusive-education': {
+                    title: 'Enhance Creativity Impact',
+                    content: `
+                            <h3>Key Benefits of Inclusive Education:</h3>
+                            <ul>
+                             <li>Improves classroom participation for students with diverse needs</li>
+                             <li>Boosts empathy and collaboration among peers by 60%</li>
+                             <li>Reduces educational inequality and access gaps</li>
+                             <li>Enhances academic outcomes for both special and mainstream students</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>Schools adopting Universal Design for Learning (UDL) and AI-assisted personalized tools help ensure every student, regardless of ability, thrives academically and socially.</p>
+
+                    `
+                },
+
+
+                'future-skills': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Future Skills:</h3>
+                            <ul>
+                           <li>Prepares learners for 80% of emerging job roles</li>
+                           <li>Improves adaptability and critical thinking by 65%</li>
+                           <li>Boosts digital literacy and problem-solving capabilities</li>
+                           <li>Equips students with collaboration and creativity for future industries</li>
+                           </ul>
+                           <h3>Real-world Applications:</h3>
+                           <p>STEM bootcamps, coding platforms like Scratch, and future-skills curricula empower students to master AI, robotics, and sustainable technologies.</p>
+                    `
+                },
+
+                'aging-support': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Aging Support:</h3>
+                            <ul>
+                           <li>Improves elderly independence and mobility by 55%</li>
+                           <li>Enhances mental wellness and reduces loneliness by 40%</li>
+                           <li>Reduces healthcare costs through proactive monitoring</li>
+                           <li>Strengthens intergenerational bonding and community support</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>Wearable health trackers, smart home assistants, and telehealth platforms provide seniors with safe, connected, and dignified living experiences.</p>
+
+                    `
+                },
+
+                'financial-management': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Financial Management:</h3>
+                            <ul>
+                            <li>Helps individuals save up to 25% more annually</li>
+                            <li>Improves budgeting accuracy by 70%</li>
+                            <li>Reduces financial stress and risk of debt</li>
+                            <li>Builds long-term wealth and investment literacy</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>Apps like Mint, YNAB, and AI-driven robo-advisors enable users to track expenses, optimize budgets, and plan for financial security.</p>
+
+                    `
+                },
+
+                'global-communication': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Global Communication:</h3>
+                            <ul>
+                            <li>Breaks down 90% of language and cultural barriers</li>
+                            <li>Enables instant real-time collaboration across borders</li>
+                            <li>Boosts business expansion opportunities worldwide</li>
+                            <li>Encourages intercultural understanding and cooperation</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>AI translation tools like Google Translate and global platforms like Zoom facilitate seamless communication for education, business, and diplomacy.</p>
+                    `
+                },
+                
+                'enhanced-experiences': {
+                    title: 'Impact',
+                    content: `
+                            <h3>Key Benefits of Enhanced Experiences:</h3>
+                            <ul>
+                            <li>Increases user engagement and satisfaction by 75%</li>
+                            <li>Delivers immersive learning and entertainment environments</li>
+                            <li>Boosts memory retention through interactive experiences</li>
+                            <li>Bridges the gap between digital and real-world interaction</li>
+                            </ul>
+                            <h3>Real-world Applications:</h3>
+                            <p>Virtual reality (VR), augmented reality (AR), and gamified apps are used in classrooms, museums, and healthcare to provide unforgettable and effective experiences.</p>
+                    `
+                },
+
+            };
+
+            
+
+            const data = impactData[impactType] || {
+                title: ':3',
+                content: `
+                        <h3>hi</h3>
+                    `
+            };
+
+            modalBody.innerHTML = `<h2>${data.title}</h2>${data.content}`;
+            modal.style.display = 'block';
+        }
+
+        // Modal functionality
+        document.addEventListener('click', function(e) {
+            const modal = document.getElementById('impact-modal');
+            if (e.target.classList.contains('modal-close') || e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Animate numbers
+        function animateNumber(element, finalText) {
+            const hasPlus = finalText.includes('+');
+            const hasPercent = finalText.includes('%');
+            const isBillion = finalText.includes('B');
+            
+            let finalNumber = parseFloat(finalText.replace(/[^0-9.]/g, ''));
+            if (isNaN(finalNumber)) return;
+
+            let currentNumber = 0;
+            const increment = finalNumber / 60;
+            const timer = setInterval(() => {
+                currentNumber += increment;
+                if (currentNumber >= finalNumber) {
+                    element.textContent = finalText;
+                    clearInterval(timer);
+                } else {
+                    let displayText = Math.floor(currentNumber * 10) / 10;
+                    if (isBillion) displayText += 'B';
+                    if (hasPlus) displayText = '+' + displayText;
+                    if (hasPercent) displayText += '%';
+                    element.textContent = displayText;
+                }
+            }, 30);
+        }
+    </script>
+
+    <!-- Additional Page-specific Styles -->
+    <style>
+        .impact-overview {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .overview-content h2 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ff0844, #21d4fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-content p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+        }
+
+        .impact-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .metric-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .metric-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .metric-item i {
+            font-size: 2rem;
+            color: #f77062;
+            margin-bottom: 1rem;
+        }
+
+        .metric-item h3 {
+            font-size: 2.5rem;
+            color: #21d4fd;
+            margin-bottom: 0.5rem;
+        }
+
+        .kids-impact-section {
+            background: linear-gradient(135deg, #131313 0%, #1a1a2e 100%);
+        }
+
+        .impact-card {
+            position: relative;
+            overflow: hidden;
+            min-height: 600px;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 129, 119, 0.1), rgba(33, 212, 253, 0.1));
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .adult-overlay {
+            background: linear-gradient(135deg, rgba(183, 33, 255, 0.1), rgba(33, 212, 253, 0.1));
+        }
+
+        .impact-icon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 2.5rem;
+            z-index: 3;
+        }
+
+        .card-subtitle {
+            position: absolute;
+            top: 380px;
+            left: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            z-index: 3;
+        }
+
+        .impact-content {
+            position: absolute;
+            top: 400px;
+            left: 30px;
+            right: 30px;
+            z-index: 3;
+        }
+
+        .impact-content p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .impact-benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-tag {
+            background: rgba(247, 112, 98, 0.2);
+            color: #f77062;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(247, 112, 98, 0.3);
+        }
+
+        .impact-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(45deg, #f77062, #fe5196);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            z-index: 3;
+        }
+
+        .impact-btn:hover {
+            background: linear-gradient(45deg, #4837ff, #b721ff);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(72, 55, 255, 0.3);
+        }
+
+        .adult-btn {
+            background: linear-gradient(45deg, #b721ff, #21d4fd);
+        }
+
+        .adult-btn:hover {
+            background: linear-gradient(45deg, #4837ff, #1976D2);
+        }
+
+        .wave-transition {
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wave-content {
+            text-align: center;
+            padding: 2rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .wave-content h2 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ff0844, #21d4fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .wave-animation {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+        }
+
+        .wave-animation svg {
+            width: 100%;
+            height: 100%;
+            animation: wave 3s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-25px);
+            }
+        }
+
+        .adult-impact-section {
+            background: linear-gradient(135deg, #16213e 0%, #0f0f0f 100%);
+        }
+
+        .impact-summary {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .summary-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .summary-content h2 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ff8177, #21d4fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        .impact-timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4rem;
+            position: relative;
+        }
+
+        .timeline-item {
+            text-align: center;
+            flex: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .timeline-item.timeline-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item h3 {
+            color: #f77062;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-connector {
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(to bottom, #f77062, #21d4fd);
+            margin: 0 1rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            color: white;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .modal-close:hover {
+            color: #f77062;
+        }
+
+        @media (max-width: 768px) {
+            .impact-timeline {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .timeline-connector {
+                width: 60px;
+                height: 2px;
+                transform: rotate(90deg);
+            }
+
+            .impact-metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .wave-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>

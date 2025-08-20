@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NEXT - Next Generation AI Technology. Explore cutting-edge AI solutions that shape the future." />
+    <meta name="keywords" content="AI, technology, next generation, artificial intelligence, innovation" />
+    <title>NEXT - Next Generation Technology</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;800&display=swap"></noscript>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Loading animation -->
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #141414; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 50px; height: 50px; border: 3px solid rgba(255, 255, 255, 0.1); border-top: 3px solid #f77062; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo" aria-label="NEXT Home">
+                <i class="fas fa-gem" aria-hidden="true"></i>NEXT
+            </a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links" aria-current="page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/impact.html" class="navbar__links">Impact</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/product.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/feedback.html" class="navbar__links">Feedback</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk3lccwHgz0uKLrcSlcs8XPlvsqVrinU7CZ7clZr5RsmsNvA/viewform?usp=dialog" class="button" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="main">
+        <section class="main__container">
+            <div class="main__content">
+                <h1>NEXT GENERATION</h1>
+                <h2>TECHNOLOGY</h2>
+                <p>See what makes us different. Experience innovation that transforms the future.</p>
+                <button class="main__btn" onclick="smoothScroll('#services')">
+                    <a href="/tech.html">Get Started</a>
+                </button>
+            </div>
+            <div class="main__img--container">
+                <img id="main__img" src="images/pic1.svg" alt="Next Generation Technology Illustration" loading="lazy" />
+            </div>
+        </section>
+    </main>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h1>See what the hype is about</h1>
+        <div class="services__container">
+            <article class="services__card fade-in">
+                <h2>Experience Bliss</h2>
+                <p>AI Powered technology</p>
+                <button class="main__btn">
+                    <a href="/tech.html" aria-label="Learn more about our AI technology">Get Started</a>
+                </button>
+            </article>
+            <article class="services__card fade-in">
+                <h2>Are you Ready?</h2>
+                <p>See the Impact that change the World</p>
+                <button class="main__btn">
+                    <a href="/Impact.html" aria-label="Explore our products">Get Started</a>
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/sign__up">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/feedback.html">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencer</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/erwyn_qoq" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/Erwyn Pain" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="/" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    <a href="https://www.linkedin.com/ERWYN TAN FU SHEN MOE" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo" aria-label="NEXT Home">
+                        <i class="fas fa-gem" aria-hidden="true"></i>NEXT
+                    </a>
+                </div>
+                <p class="website__rights">© NEXT 2024. All rights reserved</p>
+                <div class="social__icons">
+                    <a class="social__icon--link" href="https://www.facebook.com/Erwyn Pain" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="https://www.instagram.com/erwyn_qoq" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="/" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a class="social__icon--link" href="https://www.linkedin.com/ERWYN TAN FU SHEN MOE" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // mobile menu functionality
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.navbar__menu');
+        const navLinks = document.querySelectorAll('.navbar__links');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('is-active');
+                menuLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling function
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe fade-in elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Remove loader after page loads
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }, 1000);
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(19, 19, 19, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(19, 19, 19, 0.95)';
+            }
+        });
+
+        // Performance: Preload next page
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.tagName === 'A' && e.target.href.includes('.html')) {
+                const link = document.createElement('link');
+                link.rel = 'prefetch';
+                link.href = e.target.href;
+                document.head.appendChild(link);
+            }
+        });
+
+        // Add loading animation to buttons
+        document.querySelectorAll('.main__btn, .button').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (!this.classList.contains('loading')) {
+                    this.classList.add('loading');
+                    this.style.pointerEvents = 'none';
+                    
+                    setTimeout(() => {
+                        this.classList.remove('loading');
+                        this.style.pointerEvents = 'auto';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+
+    <!-- loading states -->
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .main__btn.loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid transparent;
+            border-top: 2px solid #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        .main__btn.loading a {
+            opacity: 0;
+        }
+
+        /* hover effects */
+        .services__card {
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .services__card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        /* mobile touch targets */
+        @media (max-width: 768px) {
+            .navbar__links {
+                min-height: 48px;
+            }
+            
+            .button {
+                min-height: 48px;
+            }
+        }
+    </style>
+</body>
+</html>
